@@ -15,6 +15,7 @@ export default function Banner() {
         modules={[Autoplay, Pagination]} // ✅ correct way to register modules in Swiper v9+
         spaceBetween={30}
         centeredSlides={true}
+        loop={true}
         autoplay={{ delay: 5000 }}
         pagination={{ clickable: true }}
       >
@@ -29,6 +30,6 @@ export default function Banner() {
         </SwiperSlide>
       </Swiper>
     </div>
-
+ 
   );
 }
