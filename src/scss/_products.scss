@@ -1,0 +1,23 @@
+.product-card {
+    .card {
+        padding: 20px 10px;
+
+        .image {
+            height: 300px;
+            object-fit: scale-down;
+        }
+
+        
+         .rating {
+            .stars{
+                span {
+                        font-size: 25px;   }
+            }
+          
+            .rate-num{
+                // margin-bottom: 2px;
+            }
+        }
+    }
+
+}

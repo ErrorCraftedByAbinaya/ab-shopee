@@ -1,0 +1,56 @@
+.header-section {
+    .navbar {
+        background-color: rgb(255, 255, 255);
+        padding: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 95%;
+            height: 100%;
+            border-bottom: 2px solid $secondary;
+            z-index: -1;
+            transform: translateX(-50%)
+        }
+
+        .bar-icon {
+            border: 0;
+        }
+
+        .nav-item {
+            padding: 10px 0;
+        }
+
+        .nav-link {
+            &:hover {
+                color: $primary;
+            }
+
+            &.active {
+                color: $primary ;
+            }
+        }
+
+    }
+
+    .badge {
+        color: $primary;
+        transform: translate(-50%, 40%);
+        background-color: white;
+        font-size: 12px;
+        padding: 1px 3px;
+        border: 1px solid $secondary;
+    }
+
+    @media screen and (max-width:992px) {
+        .navbar {
+            padding: 10px 0;
+        }
+    }
+}
+
+.modal-backdrop.show {
+    z-index: 1;
+}
