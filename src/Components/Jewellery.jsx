@@ -6,22 +6,22 @@ export default function Jewellery() {
     {
       id: 1,
       name: 'Earrings',
-      imgUrl: '/images/jewellery/earrings.jpg',
+      imgUrl: 'images/jewellery/earrings.jpg',
     },
     {
       id: 2,
       name: 'Necklaces',
-      imgUrl: '/images/jewellery/necklace.jpg',
+      imgUrl: 'images/jewellery/necklace.jpg',
     },
     {
       id: 3,
       name: 'Rings',
-      imgUrl: '/images/jewellery/rings.jpg',
+      imgUrl: 'images/jewellery/rings.jpg',
     },
     {
       id: 4,
       name: 'Bracelets',
-      imgUrl: '/images/jewellery/bracelet.jpg',
+      imgUrl: 'images/jewellery/bracelet.jpg',
     },
   ]
   return (

@@ -26,12 +26,16 @@ export default function ProductDetail() {
         };
     }, [dispatch, id]);
 
-    if (loading) return <Loading/>;
+    
+    useEffect(() => {
+        if (product) {
+            document.title = product.title;
+        }
+    }, [product]);
+    if (loading) return <Loading />;
     if (error) return <p>Error: {error}</p>;
     if (!product) return <p>Product not found.</p>;
-    useEffect(() => {
-        document.title = product.title;
-    }, [])
+    
     return (
         <>
             <div className='section-padding'>

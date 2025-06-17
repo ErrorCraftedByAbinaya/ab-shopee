@@ -14,6 +14,7 @@ import { useEffect } from 'react';
 import { fetchProductsByCategory } from './Features/productSlice';
 import { useDispatch } from 'react-redux';
 import Checkout from './Pages/Checkout';
+import NotFound from './Components/NotFound';
 
 function App() {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ function App() {
   }
   , [dispatch]);
   return (
-    <Router>
+    <Router basename="/ab-shopee">
       <Header />
       <div className='page-start app'>
         <Routes>
@@ -38,8 +39,8 @@ function App() {
           <Route path="/allProducts" element={<ProductList category={"allProducts"}/>} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/checkout" element={<Checkout />} />
-          {/* <Route path="/women" element={<MenClothes />} /> */}
           <Route path="/wishlist" element={<Wishlists />} />
+          <Route path="*" element={<NotFound />} />
 
 
         </Routes>
