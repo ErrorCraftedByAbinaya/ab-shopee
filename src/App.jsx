@@ -41,6 +41,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/wishlist" element={<Wishlists />} />
           <Route path="*" element={<NotFound />} />
+          
 
 
         </Routes>

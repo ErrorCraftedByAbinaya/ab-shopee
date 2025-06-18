@@ -11,22 +11,22 @@ export default function Gadgets() {
 
     const gadgets = [
         {
-            id: 1, title: "Smart Massage Gun",
+            id: 1, title: "Lorem ipsum dolor",
             description: "PLorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam ex alias voluptates vel voluptatem tempore vitae voluptate nemo quod exercitationem",
             image: "1.jpg", category: "Muscle Relief"
         },
         {
-            id: 2, title: "Aromatherapy Diffuser",
+            id: 2, title: "Lorem ipsum dolor",
             description: "PLorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam ex alias voluptates vel voluptatem tempore vitae voluptate nemo quod exercitationem officiis earum aspernatur voluptatibus, quidem laborum aperiam commodi sit",
             image: "2.jpg",
             category: "Aromatherapy"
         },
         {
-            id: 3, title: "Meditation Headband",
+            id: 3, title: "Lorem ipsum dolor",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam ex alias voluptates vel voluptatem tempore vitae voluptate nemo quod exercitationem officiis earum aspernatur voluptatibus, quidem laborum aperiam commodi sit", image: "3.jpg", category: "Mindfulness"
         },
-        { id: 4, title: "Heated Eye Mask", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam ex alias voluptates vel voluptatem tempore vitae voluptate nemo quod exercitationem officiis earum aspernatur voluptatibus, quidem laborum aperiam commodi sit", image: "1.jpg", category: "Sleep Aid" },
-        { id: 5, title: "Acupressure Mat", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam ex alias voluptates vel voluptatem tempore vitae voluptate nemo quod exercitationem officiis earum aspernatur voluptatibus, quidem laborum aperiam commodi sit", image: "2.jpg", category: "Stress Relief" }
+        { id: 4, title: "Lorem ipsum dolor", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam ex alias voluptates vel voluptatem tempore vitae voluptate nemo quod exercitationem officiis earum aspernatur voluptatibus, quidem laborum aperiam commodi sit", image: "1.jpg", category: "Sleep Aid" },
+        { id: 5, title: "Lorem ipsum dolor", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam ex alias voluptates vel voluptatem tempore vitae voluptate nemo quod exercitationem officiis earum aspernatur voluptatibus, quidem laborum aperiam commodi sit", image: "2.jpg", category: "Stress Relief" }
     ];
 
     const settings = {
@@ -63,7 +63,7 @@ export default function Gadgets() {
     return (
         <div className='section-padding'>
             <div className="container gadgets-section">
-                <h2 className='title'>Relaxation Gadgets</h2>
+                <h2 className='title'>Smart Living Gadgets</h2>
 
                 <Slider ref={sliderRef} {...settings}>
                     {gadgets.map((gadget, index) => (
