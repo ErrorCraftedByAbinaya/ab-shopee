@@ -99,7 +99,7 @@ const Login = () => {
             onClick={handleGoogleLogin}
           >
             <img
-              src="images/google-icon.png"
+              src="/public/images/google-icon.png"
               alt="Google"
               style={{ width: '20px', height: '20px' }}
             />

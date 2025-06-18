@@ -6,16 +6,16 @@ import { Link } from 'react-router-dom';
 
 const Clothes = () => {
     const items = [
-        { id: 1, image: 'images/clothes/1.jpg',url:'/men' },
-        { id: 2, image: 'images/clothes/2.jpg', url: '/men' },
-        { id: 3, image: 'images/clothes/3.jpg', url: '/women' },
-        { id: 4, image: 'images/clothes/4.jpg', url: '/women' },
-        { id: 5, image: 'images/clothes/5.jpg', url: '/men' },
-        { id: 6, image: 'images/clothes/6.jpg', url: '/women' },
-        { id: 7, image: 'images/clothes/7.jpg', url: '/women' },
-        { id: 8, image: 'images/clothes/8.jpg', url: '/women' },
-        { id: 9, image: 'images/clothes/9.jpg', url: '/women' },
-        { id: 10, image: 'images/clothes/10.jpg', url: '/women' }
+        { id: 1, image: '/public/images/clothes/1.jpg',url:'/men' },
+        { id: 2, image: '/public/images/clothes/2.jpg', url: '/men' },
+        { id: 3, image: '/public/images/clothes/3.jpg', url: '/women' },
+        { id: 4, image: '/public/images/clothes/4.jpg', url: '/women' },
+        { id: 5, image: '/public/images/clothes/5.jpg', url: '/men' },
+        { id: 6, image: '/public/images/clothes/6.jpg', url: '/women' },
+        { id: 7, image: '/public/images/clothes/7.jpg', url: '/women' },
+        { id: 8, image: '/public/images/clothes/8.jpg', url: '/women' },
+        { id: 9, image: '/public/images/clothes/9.jpg', url: '/women' },
+        { id: 10, image: '/public/images/clothes/10.jpg', url: '/women' }
       ]
     const sliderRef = useRef(null);
     const [currIndex, setCurrIndex] = useState(1);
