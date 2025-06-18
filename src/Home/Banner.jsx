@@ -20,7 +20,7 @@ export default function Banner() {
         pagination={{ clickable: true }}
       >
         <SwiperSlide>
-          <img src="images/banner/banner-1.jpg" alt="Slide 1" className="img-fluid banner-img" />
+          <img src="images/banner/banner-2.jpg" alt="Slide 1" className="img-fluid banner-img" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="images/banner/banner-3.jpg" alt="Slide 2" className="img-fluid banner-img" />
