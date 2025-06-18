@@ -69,7 +69,7 @@ export default function Gadgets() {
                     {gadgets.map((gadget, index) => (
                         <div key={index} className="gadget-slide d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5">
                             <Link to='/electronics' className='image-left'>
-                                <img src={`/public/images/electronics/${gadget.image}`} alt={gadget.title} className='img-fluid' />
+                                <img src={`images/electronics/${gadget.image}`} alt={gadget.title} className='img-fluid' />
 
                             </Link>
                             <div className='align-self-start'>
