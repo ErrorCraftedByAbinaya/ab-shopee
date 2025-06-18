@@ -9,6 +9,7 @@ import { addToCart } from '../Features/cartSlice.js';
 import { toggleWishlist } from '../Features/wishlistSlice.js';
 import Loading from '../Components/Loading.jsx';
 import ShippingRefund from '../Components/ShippingRefund.jsx';
+import ServerError from '../Components/ServerError.jsx';
 
 export default function ProductDetail() {
     const { id } = useParams();
@@ -33,7 +34,7 @@ export default function ProductDetail() {
         }
     }, [product]);
     if (loading) return <Loading />;
-    if (error) return <p>Error: {error}</p>;
+    if (error) return <ServerError/>;
     if (!product) return <p>Product not found.</p>;
     
     return (

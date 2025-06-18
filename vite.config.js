@@ -4,5 +4,14 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:'/ab-shopee/'
+  base:'/ab-shopee/',
+  server: {
+    proxy: {
+      "/images": {
+        target: "http://localhost:8000",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/images/, "/images"),
+      },
+    },
+  },
 })

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchProductsByCategory } from '../Features/productSlice';
 import Products from '../Components/Products';
 import Loading from '../Components/Loading';
+import ServerError from '../Components/ServerError';
 
 export default function ProductList({ category }) {
     const dispatch = useDispatch();
@@ -19,7 +20,7 @@ export default function ProductList({ category }) {
     }, [category]);
     
     if (loading) return <div className='h-100'><Loading /></div>;
-    if (error) return <p>Error: {error}</p>;
+        if (error) return <ServerError/>;
    
     return (
         <div className="product-list">

@@ -105,7 +105,7 @@ const Clothes = () => {
                                     ref={el => itemRefs.current[index] = el}
                                 >
                                     <div className="item__3d-frame">
-                                        <div className="item__3d-frame__box item__3d-frame__box--front" style={{backgroundImage: `url(${val.image})`,backgroundSize: 'cover', backgroundPosition: 'center'}}>
+                                        <div className="item__3d-frame__box item__3d-frame__box--front" style={{backgroundImage: `url(/public/${val.image})`,backgroundSize: 'cover', backgroundPosition: 'center'}}>
                                         </div>
                                         <div className="item__3d-frame__box item__3d-frame__box--left" />
                                         <div className="item__3d-frame__box item__3d-frame__box--right" />
